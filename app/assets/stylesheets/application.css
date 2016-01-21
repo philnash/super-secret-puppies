@@ -18,6 +18,12 @@ main.container {
   padding-top: 70px;
 }
 
+.flash {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
 .puppies li {
   padding-top: 15px;
   padding-bottom: 15px;
