@@ -15,5 +15,10 @@
  */
 
 main.container {
-  padding-top:70px;
+  padding-top: 70px;
+}
+
+.puppies li {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

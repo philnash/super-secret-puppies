@@ -1,0 +1,10 @@
+<h1>Puppies</h1>
+<p>Here are those pictures you were after.</p>
+
+<ul class="row list-unstyled puppies">
+  <% 8.times do |n| %>
+    <li class="col-md-3 col-sm-6 col-xs-6">
+      <%= image_tag "puppies/#{n+1}.jpg", class: "img-thumbnail img-responsive" %>
+    </li>
+  <% end %>
+</ul>
