@@ -26,6 +26,17 @@
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Puppies", puppies_path %></li>
         </ul>
+        <% if defined?(current_user) %>
+          <ul class="nav navbar-nav navbar-right">
+            <% if current_user %>
+              <li class="navbar-text">Hello <%= current_user.email %></li>
+              <li><%= link_to "Sign out", destroy_user_session_path %></li>
+            <% else %>
+              <li><%= link_to "Sign up", new_user_registration_path %></li>
+              <li><%= link_to "Sign in", new_user_session_path %></li>
+            <% end -%>
+          </ul>
+        <% end -%>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
